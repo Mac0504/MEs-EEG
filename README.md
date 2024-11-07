@@ -7,6 +7,8 @@ Emotions are inherently multimodal processes, with facial expressions playing a 
 # Samples
 ![image](samples-1.gif)
 
+![image](samples-2.gif)
+
 # Experimental Scene and Results
 ![image](pic.png)
 

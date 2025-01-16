@@ -15,9 +15,17 @@ We simultaneously recorded facial videos and EEG data from 67 participants. Foll
 
 ![image](pictures/pic1.png)
 
-The overview structure of our proposed MEs-EEG fusion and classification network has a dual-stream architecture and includes three components.
+The overview structure of our proposed MEs-EEG fusion and classification network has a dual-stream architecture and includes three components. 
+
+Pipeline: (1) EEG feature extraction module. The EEG signals underwent preprocessing steps including downsampling, independent component analysis (ICA), and filtering. The resulting power spectral densities (PSDs) of five classical frequency bands were fed into a Temporal Convolutional Network (TCN) to extract advanced features, as shown in (a). 
+
+(2) For ME samples, the optical flow between the onset and apex frames was computed. A Spatial Transformer Network (STN) was then employed to extract visual features from key facial regions, as shown in (b). 
+
+(3) Transformer-based fusion and classification module. A fusion and classification model leveraging cross-modal attention was developed to facilitate information exchange between the two modalities via a Cross-Transformer. To address the issue of class imbalance in hidden emotion classification, the focal loss function was applied, as shown in (c).
 
 ![image](pictures/pic2.png)
+
+We found that the integration of EEG and ME features significantly enhances emotion classification accuracy, demonstrating the effectiveness of the multi-modality fusion strategy employed in this study. This finding suggests a degree of complementarity between the two modalities in representing different emotions. Additionally, regardless of whether a single-modality or multi-modality approach is utilized, the trained models exhibit the best performance in classifying disgust and fear, achieving accuracy rates of 85.51\% for disgust and 79.29\% for fear. This result can be partly attributed to the relatively large sample sizes for these two emotions. Additionally, disgust and fear exhibit significant differences in physiological responses and facial expressions, which further contribute to the model's enhanced performance in classifying these negative emotions.
 
 ![image](pictures/pic3.png)
 

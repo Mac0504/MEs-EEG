@@ -12,7 +12,10 @@ With the development of multimedia technology, emotion recognition has gradually
 # Experimental Scene and Results
 
 We simultaneously recorded facial videos and EEG data from 67 participants. Following meticulous annotation, we constructed a dataset comprising 453 micro-expression (ME) video clips and 3,015 EEG trials, covering five emotional categories.
+
 ![image](pictures/pic1.png)
+
+The overview structure of our proposed MEs-EEG fusion and classification network has a dual-stream architecture and includes three components.
 
 ![image](pictures/pic2.png)
 

@@ -10,6 +10,8 @@ With the development of multimedia technology, emotion recognition has gradually
 ![image](samples-2.gif)
 
 # Experimental Scene and Results
+
+We simultaneously recorded facial videos and EEG data from 67 participants. Following meticulous annotation, we constructed a dataset comprising 453 micro-expression (ME) video clips and 3,015 EEG trials, covering five emotional categories.
 ![image](pictures/pic1.png)
 
 ![image](pictures/pic2.png)

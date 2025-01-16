@@ -10,7 +10,11 @@ With the development of multimedia technology, emotion recognition has gradually
 ![image](samples-2.gif)
 
 # Experimental Scene and Results
-![image](pic.png)
+![image](pictures/pic1.png)
+
+![image](pictures/pic2.png)
+
+![image](pictures/pic3.png)
 
 # How to get
 

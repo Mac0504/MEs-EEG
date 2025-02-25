@@ -1,8 +1,8 @@
-# Multi-modality Hidden Emotion Recognition via Electroencephalogram and Facial Micro-expressions
+# A Transformer-Based Multimodal Framework for Hidden Emotion Recognition through Micro-Expression and EEG Fusion
 
 # Abstract
 
-With the development of multimedia technology, emotion recognition has gradually matured, but hidden emotion recognition still faces numerous challenges. Given the unique advantages of micro-expressions (MEs) and electroencephalogram (EEG) signals in capturing subtle emotional cues, we recreated scenarios where individuals suppress facial expressions to conceal emotions in response to intense emotional stimuli. Simultaneous recording of MEs and EEG data from 67 participants resulted in a dataset comprising 453 ME video clips and 3,015 EEG trials across five emotional categories. To assess the dataset’s reliability, we developed an emotion classification model utilizing cross-modal attention mechanisms, achieving 80.46\% accuracy in classifying hidden emotions across the five categories. This method outperforms approaches relying solely on MEs or EEG by 9.83\% and 6.94\%, respectively. To the best of our knowledge, this is the first publicly available dataset that includes both MEs and EEG data, which will be available at: https://github.com/Mac0504/MEs-EEG.
+With the development of multimedia technology, emotion recognition has gradually matured, but hidden emotion recognition still faces numerous challenges. Given the unique advantages of micro-expressions (MEs) and electroencephalogram (EEG) signals in capturing subtle emotional cues, we recreated scenarios where individuals suppress facial expressions to conceal emotions in response to intense emotional stimuli. Simultaneous recording of MEs and EEG data from 60 participants resulted in a dataset comprising 453 ME video clips and 2,940 EEG trials across seven emotional categories. To evaluate the reliability of the dataset, we developed an emotion classification model utilizing a cross-modal attention mechanism. The model achieved an accuracy of 89.71% for three-class classification and 40.22% for seven-class classification, demonstrating a significant performance improvement compared to single-modal approaches. To the best of our knowledge, this is the first publicly available dataset that includes both MEs and EEG data.
 
 # Samples
 ![image](samples-1.gif)
@@ -11,7 +11,7 @@ With the development of multimedia technology, emotion recognition has gradually
 
 # Experimental Scene and Results
 
-We simultaneously recorded facial videos and EEG data from 67 participants. Following meticulous annotation, we constructed a dataset comprising 453 micro-expression (ME) video clips and 3,015 EEG trials, covering five emotional categories.
+We simultaneously recorded facial videos and EEG data from 60 participants. Following meticulous annotation, we constructed a dataset comprising 453 micro-expression (ME) video clips and 2,940 EEG trials, covering seven emotional categories.
 
 ![image](pictures/pic1.png)
 

@@ -25,9 +25,11 @@ Pipeline: (1) EEG feature extraction module. The EEG signals underwent preproces
 
 ![image](pictures/pic2.png)
 
-We found that the integration of EEG and ME features significantly enhances emotion classification accuracy, demonstrating the effectiveness of the multi-modality fusion strategy employed in this study. This finding suggests a degree of complementarity between the two modalities in representing different emotions. Additionally, regardless of whether a single-modality or multi-modality approach is utilized, the trained models exhibit the best performance in classifying disgust and fear, achieving accuracy rates of 85.51\% for disgust and 79.29\% for fear. This result can be partly attributed to the relatively large sample sizes for these two emotions. Additionally, disgust and fear exhibit significant differences in physiological responses and facial expressions, which further contribute to the model's enhanced performance in classifying these negative emotions.
+This study constructed a multimodal dataset for hidden emotion recognition that incorporates EEG and MEs, exceeding most publicly available ME datasets in both sample size and emotional categories. To evaluate the dataset's reliability, we utilized a STN to extract features from ME images and a TCN to derive features from EEG signals. Subsequently, we performed feature fusion and emotion classification based on the cross-modal attention mechanism. The model achieved an accuracy of 89.71\% for three-class classification and 40.22\% for seven-class classification, demonstrating a significant performance improvement compared to single-modal approaches. Our study not only offers a novel perspective on emotion recognition but also provides significant data support for the development of more accurate emotional recognition technologies. In the future, we will continue to improve this dataset, with a focus on addressing the issue of class imbalance.
 
 ![image](pictures/pic3.png)
+
+![image](pictures/pic4.png)
 
 # How to get
 

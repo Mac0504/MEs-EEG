@@ -30,7 +30,3 @@ This study constructed a multimodal dataset for hidden emotion recognition that 
 ![image](pictures/pic3.png)
 
 ![image](pictures/pic4.png)
-
-# How to get
-
-This database is publicly available for any academic use. To obtain it, please sign the release agreement and send a scanned copy to ustb_machuang@163.com.

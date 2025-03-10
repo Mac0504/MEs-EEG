@@ -201,7 +201,6 @@ class MultiModalLoss(nn.Module):
         return total_loss
 
 
-# Example usage
 if __name__ == "__main__":
     # Example data
     batch_size = 16

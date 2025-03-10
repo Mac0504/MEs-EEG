@@ -208,11 +208,6 @@ if __name__ == "__main__":
     num_classes = 4
     feature_dim = 128
 
-    logits = torch.randn(batch_size, num_classes)
-    features1 = torch.randn(batch_size, feature_dim)
-    features2 = torch.randn(batch_size, feature_dim)
-    labels = torch.randint(0, num_classes, (batch_size,))
-
     # Initialize loss functions
     ce_loss = CrossEntropyLoss()
     contrastive_loss = ContrastiveLoss()

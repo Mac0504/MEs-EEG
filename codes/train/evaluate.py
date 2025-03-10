@@ -132,7 +132,8 @@ def plot_roc_curve(all_labels, all_probs, class_names):
 
     # Plot all ROC curves
     plt.figure(figsize=(10, 8))
-    colors = ['blue', 'red', 'green', 'orange']
+    colors = ['blue', 'red', 'green']
+    # colors = ['blue', 'red', 'green', 'orange', 'gray', 'purple', 'yellow']
     for i, color in zip(range(len(class_names)), colors):
         plt.plot(fpr[i], tpr[i], color=color, lw=2,
                  label=f'ROC curve of class {class_names[i]} (area = {roc_auc[i]:.2f})')

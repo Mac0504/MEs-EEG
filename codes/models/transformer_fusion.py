@@ -145,19 +145,3 @@ class CrossTransformer(nn.Module):
         attended = self.cross_transformer(combined)
         # Return the attended query part
         return attended[:, :query.size(1)]
-
-
-if __name__ == "__main__":
-    # Example usage
-    batch_size = 8
-    seq_len_eeg = 50
-    seq_len_me = 20
-    eeg_input_dim = 64
-    me_input_dim = 128
-    num_classes = 5
-
-    model = TransformerFusion(eeg_input_dim, me_input_dim, num_classes=num_classes)
-    eeg_tokens = torch.rand(batch_size, seq_len_eeg, eeg_input_dim)
-    me_tokens = torch.rand(batch_size, seq_len_me, me_input_dim)
-    logits = model(eeg_tokens, me_tokens)
-    print("Output logits shape:", logits.shape)

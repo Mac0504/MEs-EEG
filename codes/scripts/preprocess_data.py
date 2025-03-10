@@ -187,10 +187,6 @@ def load_data(load_path):
 
 # **4. Main Function**
 if __name__ == "__main__":
-    # Example input paths
-    eeg_data_path = "data/eeg_sample.npy"  # Path to EEG data
-    onset_frame_path = "data/onset.jpg"  # Path to onset frame
-    apex_frame_path = "data/apex.jpg"  # Path to apex frame
     processed_data_save_path = "processed_data.pkl"  # Path to save processed data
 
     # Create preprocessors
@@ -198,11 +194,17 @@ if __name__ == "__main__":
     me_processor = MicroExpressionPreprocessor()
 
     # Load EEG data
-    eeg_data = np.load(eeg_data_path)  # Assuming data shape is (channels, samples)
+    mat_data = scipy.io.loadmat('./data/eeg/eeg_data.mat')
+    eeg_data = mat_data['eeg_data']
+    eeg_data = eeg_data.astype(np.float32)
     eeg_features = eeg_processor.preprocess(eeg_data)
 
+    # Load MEs data
+    onset_frame = cv2.imread(r'./data/MEs/pics_selected_segmented_cropped/angry_liyan20230802_116_1.70_1.97_2.20/onset.png')
+    apex_frame = cv2.imread(r'./data/MEs/pics_selected_segmented_cropped/angry_liyan20230802_116_1.70_1.97_2.20/apex.png')
+
     # Process micro-expression data
-    me_features = me_processor.preprocess(onset_frame_path, apex_frame_path)
+    me_features = me_processor.preprocess(onset_frame, apex_frame)
 
     # Save preprocessed data
     processed_data = {

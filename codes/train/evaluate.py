@@ -156,7 +156,8 @@ def main():
     print(f"ROC AUC: {metrics['roc_auc']:.4f}")
 
     # Plot confusion matrix
-    class_names = ['Happy', 'Sad', 'Angry', 'Neutral']
+    class_names = ['Neg', 'Pos', 'Sur']
+    # class_names = ['Hap', 'Sur', 'Sad', 'Fea', 'Ang', 'Dis', 'Con']
     plot_confusion_matrix(metrics['confusion_matrix'], class_names)
 
     # Plot ROC curve

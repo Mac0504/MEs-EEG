@@ -173,7 +173,9 @@ if __name__ == "__main__":
     batch_size = 4
     channels = 32
     seq_length = 128
-    eeg_data = np.random.rand(batch_size, channels, seq_length)
+    mat_data = scipy.io.loadmat('data/eeg/eeg_data.mat')
+    eeg_data = mat_data['eeg_data']
+    eeg_data = eeg_data.astype(np.float32)
 
     model = EEGFeatureExtractor(input_channels=32, hidden_channels=64, num_layers=3, feature_dim=128)
     output = model(eeg_data)

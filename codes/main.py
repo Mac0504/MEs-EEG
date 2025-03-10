@@ -56,8 +56,8 @@ def main():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     # Load datasets
-    eeg_dataset = EEGDataset(config['data'][r'data/eeg'])
-    me_dataset = MEDataset(config['data'][r'data/me'])
+    eeg_dataset = EEGDataset(config['data'][r'data/EEG'])
+    me_dataset = MEDataset(config['data'][r'data/MEs'])
     train_dataset, val_dataset, test_dataset = load_data_split(eeg_dataset, me_dataset)
 
     # Create data loaders

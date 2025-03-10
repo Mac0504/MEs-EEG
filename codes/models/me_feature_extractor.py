@@ -139,8 +139,8 @@ if __name__ == "__main__":
     batch_size = 8
     channels, height, width = 3, 224, 224
 
-    onset_frame = cv2.imread(r'/data/MEs/pics_selected_segmented_cropped/Micro/angry_liyan20230802_116_1.70_1.97_2.20/onset.png')
-    apex_frame = cv2.imread(r'/data/MEs/pics_selected_segmented_cropped/Micro/angry_liyan20230802_116_1.70_1.97_2.20/apex.png')
+    onset_frame = cv2.imread(r'/data/MEs/pics_selected_segmented_cropped/angry_liyan20230802_116_1.70_1.97_2.20/onset.png')
+    apex_frame = cv2.imread(r'/data/MEs/pics_selected_segmented_cropped/angry_liyan20230802_116_1.70_1.97_2.20/apex.png')
 
     model = MEFeatureExtractor(pretrained=False)
     features = model(onset_frame, apex_frame)
